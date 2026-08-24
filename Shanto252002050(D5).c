@@ -7,6 +7,9 @@ int room;
 int treasure;
 struct Node *next;
 };
+
+
+
 struct Node* createRoom(int room, int treasure){
 struct Node *newNode;
 newNode =(struct Node*)malloc(sizeof(struct Node));
@@ -25,6 +28,7 @@ int score = 0;
 head = createRoom(1, rand() %2);
     temp = head;
 for(i =2; i <=5; i++){
+    
 temp->next = createRoom(i, rand() %2);
 temp = temp->next;
 }
@@ -32,12 +36,15 @@ temp = head;
  printf("\n\n\t\t TREASURE HUNT GAME \n\n");
    printf("\t   Find the treasure in 5 rooms! \n");
  while(temp != NULL){
+     
     printf("\nYou are in Room %d\n", temp->room);
 printf("1. Search Room\n");
 printf("2. Go to Next Room\n");
 printf("Enter choice: ");
 scanf("%d", &choice);
-   if(choice ==1){
+
+     if(choice ==1){
+       
 if(temp->treasure== 1){
  printf("\n*** TREASURE FOUND! ***\n");
  score+= 10;
