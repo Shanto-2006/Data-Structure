@@ -7,8 +7,7 @@ int room;
 int treasure;
 struct Node *next;
 };
-struct Node* createRoom(int room, int treasure)
-{
+struct Node* createRoom(int room, int treasure){
 struct Node *newNode;
 newNode =(struct Node*)malloc(sizeof(struct Node));
 newNode->room =room;
@@ -16,8 +15,7 @@ newNode->treasure =treasure;
 newNode->next =NULL;
 return newNode;
 }
-int main()
-{
+int main(){
 struct Node *head =NULL;
 struct Node *temp =NULL;
 
