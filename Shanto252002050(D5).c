@@ -72,3 +72,9 @@ else
 printf("GOOD BOY\n");
 return 0;
 }
+
+
+//name : md. shanto
+//roll : 252002050
+//from : green university of bangladesh
+//teacher : md. sabbitr hosain mammun
